@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root {
+    --typography-base: 16px;
+    --type-line-height: calc(1.5* var(--typography-base));
+    --spacing: 10px;
+
+    --black: black;
+}
+
+/* H1 */
+h1 {
+    font-family: koulen;
+    font-size: calc(16* var(--typography-base));
+    line-height: calc(15* var(--typography-base));
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px
+}
+
+/* SUB HEADING */
+.author {
+    font-family: dm sans;
+    font-weight: 600;
+    font-size: calc(2.5* var(--typography-base));
+    text-align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.author:hover {
+    font-family: dm sans;
+    color: black;
+}
+
+p {
+    font-family: dm sans;
+    width: 50%;
+    font-size: calc(1.5* var(--typography-base));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p:hover {
+    color: rgb(25, 0, 255);
+    font-family: dm mono;
+}

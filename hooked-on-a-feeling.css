@@ -11,6 +11,11 @@
     --black: black;
 }
 
+body {
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 /* H1 */
 h1 {
@@ -19,10 +24,19 @@ h1 {
 
 /* BODY COPY */
 p {
-    width: 55%;
-    line-height: calc(1.6 * var(--typography-base));
+    width: 60%;
+    font-size: calc(1.2 * var(--typography-base));
+    line-height: calc(1.9 * var(--typography-base));
 }
 
-section:nth-child(2) {
-    background-color: tomato;
+section {
+    padding-top: calc(2* var(--spacing));
+    padding-top: calc(2* var(--spacing));
+}
+
+section:nth-child(3) {
+    border-color: black;
+    stroke-width: 2px;
+    /* background-color: tomato; */
+    padding: 10px;
 }
