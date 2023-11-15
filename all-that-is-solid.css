@@ -43,6 +43,7 @@ p {
     font-family: dm sans;
     width: 50%;
     font-size: calc(1.5* var(--typography-base));
+    line-height: calc(2.2* var(--typography-base));
     margin-left: auto;
     margin-right: auto;
 }

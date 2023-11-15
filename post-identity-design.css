@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+:root {
+    --typography-base: 16px;
+    --type-line-height: calc(1.5* var(--typography-base));
+    --spacing: 10px;
+
+    --black: black;
+}
+
+body {
+    margin-bottom: 10%;
+    margin-left: 7%;
+    /* margin-right: 10%; */
+}
+
+/* H1 */
+h1 {
+    font-family: silkscreen;
+    font-size: calc(7.8* var(--typography-base));
+    line-height: calc(8* var(--typography-base));
+    font-weight: 400;
+}
+
+h1:hover {
+    font-family: bungee shade;
+}
+
+/* BODY COPY */
+p {
+    font-family: cardo;
+    width: 65%;
+    font-size: calc(1.8 * var(--typography-base));
+    line-height: calc(2.2 * var(--typography-base));
+}
+
+section {
+    padding-top: calc(2* var(--spacing));
+    padding-top: calc(2* var(--spacing));
+}
+
+section:nth-child(3) {
+    border-color: black;
+    stroke-width: 2px;
+    /* background-color: tomato; */
+    padding: 10px;
+}
