@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
 
 :root {
     --typography-base: 16px;
@@ -29,6 +29,15 @@ h1:hover {
     font-family: bungee shade;
 }
 
+/* SUB HEADING */
+.author {
+    font-family: inclusive sans;
+    font-weight: 400;
+    font-size: calc(2.5* var(--typography-base));
+    text-align: left;
+    margin-bottom: 100px;
+}
+
 /* BODY COPY */
 p {
     font-family: cardo;
@@ -37,14 +46,16 @@ p {
     line-height: calc(2.2 * var(--typography-base));
 }
 
+/* SECTIONS */
 section {
     padding-top: calc(2* var(--spacing));
-    padding-top: calc(2* var(--spacing));
+    padding-bottom: calc(2* var(--spacing));
+    display: flex;
+    height: calc(20* var(--spacing));
+    overflow: scroll;
 }
 
 section:nth-child(3) {
-    border-color: black;
+    background-color: hotpink;
     stroke-width: 2px;
-    /* background-color: tomato; */
-    padding: 10px;
 }
