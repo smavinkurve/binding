@@ -41,9 +41,9 @@ h1:hover {
 /* BODY COPY */
 p {
     font-family: cardo;
-    width: 65%;
+    width: 60%;
     font-size: calc(1.8 * var(--typography-base));
-    line-height: calc(2.2 * var(--typography-base));
+    line-height: calc(2.4 * var(--typography-base));
 }
 
 /* SECTIONS */
