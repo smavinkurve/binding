@@ -51,11 +51,10 @@ section {
     padding-top: calc(2* var(--spacing));
     padding-bottom: calc(2* var(--spacing));
     display: flex;
-    height: calc(20* var(--spacing));
-    overflow: scroll;
+    /* height: calc(20* var(--spacing));
+    overflow: scroll; */
 }
 
 section:nth-child(3) {
-    background-color: hotpink;
     stroke-width: 2px;
 }
