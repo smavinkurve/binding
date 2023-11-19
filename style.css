@@ -15,3 +15,27 @@
 
     --black: black;
 }
+
+/* H1 */
+h1 {
+    font-family: koulen;
+    font-size: calc(16* var(--typography-base));
+    line-height: calc(15* var(--typography-base));
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px
+}
+
+/* SUB HEADING */
+.author {
+    font-family: dm sans;
+    font-weight: 600;
+    font-size: calc(2.5* var(--typography-base));
+    text-align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
