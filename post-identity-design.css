@@ -5,7 +5,7 @@
 
 :root {
     --typography-base: 16px;
-    --type-line-height: calc(1.5* var(--typography-base));
+    /* --type-line-height: calc(1.5* var(--typography-base)); */
     --spacing: 10px;
 
     --black: black;
@@ -57,4 +57,28 @@ section {
 
 section:nth-child(3) {
     stroke-width: 2px;
+}
+
+.gradient-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button {
+    font-family: inclusive sans;
+    font-weight: 400;
+    font-size: calc(1.5* var(--typography-base));
+    padding: var(--spacing);
+    border-radius: 3px;
+    border-color: black;
+}
+
+.pull-quote {
+    font-family: cardo;
+    width: 40ch;
+    font-size: calc(3 * var(--typography-base));
+    line-height: calc(3.3 * var(--typography-base));
+    font-weight: 700;
+
 }
