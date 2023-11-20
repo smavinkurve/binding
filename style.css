@@ -18,7 +18,7 @@
 /* MEDIA QUERIES - LARGE SCREENS */
 @media (min-width: 1280px) {
         h1 {
-            font-family: silkscreen;
+            font-family: bungee shade;
             font-weight: 400;
             font-size: calc(7.8* var(--typography-base));
             line-height: calc(8.2* var(--typography-base));
@@ -58,8 +58,9 @@
 @media (max-width: 1280px) {
     h1 {
         font-family: bungee shade;
-        font-size: calc(16* var(--typography-base));
-        line-height: calc(15* var(--typography-base));
+        font-weight: 400;
+        font-size: calc(7.8* var(--typography-base));
+        line-height: calc(8.2* var(--typography-base));   
         margin-top: 50px;
         margin-bottom: 30px
     }  
@@ -67,16 +68,25 @@
     p {
         font-family: dm sans;
         font-weight: 500;
-        font-size: calc(2* var(--typography-base));
-        line-height: calc(2.4* var(--typography-base));
-        width: 760ch;
+        font-size: calc(1.5* var(--typography-base));
+        line-height: calc(2.2* var(--typography-base));
+        width: 60%;
     }
 
     .author {
         font-family: dm sans;
         font-weight: 600;
         font-size: calc(2.5* var(--typography-base));
-   
+    }
+
+    .pull-quote {
+        font-family: dm sans;
+        width: 50%;
+        font-weight: 600;
+        font-size: calc(2.2* var(--typography-base));
+        line-height: calc(3.3* var(--typography-base));
+        margin-left: 15%;
+    
     }
 }
 
@@ -85,26 +95,33 @@
     h1 {
         font-family: epilogue;
         font-weight: 900;
-        font-size: calc(10* var(--typography-base));
-        line-height: calc(11* var(--typography-base));
+        font-size: calc(7.5* var(--typography-base));
+        line-height: calc(8* var(--typography-base));
         margin-top: 50px;
         margin-bottom: 30px
     }  
 
-    p {
-        font-family: cardo;
-        font-size: calc(2* var(--typography-base));
-        line-height: calc(2.4* var(--typography-base));
-        width: 75ch;
-    }
-
     .author {
-        font-family: dm sans;
+        font-family: inclusive sans;
         font-weight: 600;
         font-size: calc(2* var(--typography-base));
-   
     }
-   
+
+    p {
+        font-family: cardo;
+        font-size: calc(1.5* var(--typography-base));
+        line-height: calc(2.2* var(--typography-base));
+        width: 60%;
+    }
+
+    .pull-quote {
+        font-family: inclusive sans;
+        width: 65%;
+        font-weight: 600;
+        font-size: calc(2* var(--typography-base));
+        line-height: calc(2.8* var(--typography-base));
+        margin-left: 15%;
+    }
 }
 
 
@@ -118,18 +135,29 @@
         margin-bottom: 30px
     }   
     
-p {
-    font-size: dm sans;
-    font-size: calc(1.2* var(--typography-base));
-    line-height: calc(2* var(--typography-base));
-    width: 70%;
-}
 
 .author {
     font-family: dm sans;
     font-weight: 600;
     font-size: calc(2* var(--typography-base));
 }
+
+p {
+    font-size: dm sans;
+    font-size: calc(1.2* var(--typography-base));
+    line-height: calc(2* var(--typography-base));
+    width: 80%;
+}
+
+.pull-quote {
+    font-family: cardo;
+    width: 80%;
+    font-weight: 600;
+    font-size: calc(2* var(--typography-base));
+    line-height: calc(2.8* var(--typography-base));
+    margin-left: auto;
+}
+
 }
 
 /* ******************************************************************* */
