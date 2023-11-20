@@ -70,15 +70,15 @@ button {
     font-weight: 400;
     font-size: calc(1.5* var(--typography-base));
     padding: var(--spacing);
-    border-radius: 3px;
+    border-radius: 10px;
     border-color: black;
 }
 
 .pull-quote {
-    font-family: cardo;
+    font-family: inclusive sans;
     width: 40ch;
     font-size: calc(3 * var(--typography-base));
-    line-height: calc(3.3 * var(--typography-base));
+    line-height: calc(3.6 * var(--typography-base));
     font-weight: 700;
 
 }

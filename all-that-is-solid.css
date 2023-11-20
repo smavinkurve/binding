@@ -53,3 +53,13 @@ p:hover {
     color: rgb(25, 0, 255);
     font-family: dm mono;
 }
+
+.pull-quote {
+    font-family: dm sans;
+    width: 50%;
+    font-size: calc(2.5* var(--typography-base));
+    line-height: calc(3.3* var(--typography-base));
+    margin-left: 10%;
+    /* margin-right: auto; */
+
+}

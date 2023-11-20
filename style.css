@@ -16,37 +16,108 @@
     --black: black;
 }
 /* MEDIA QUERIES - SMALL LAPTOPS? */
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+    h1 {
+        font-family: bungee;
+        font-size: calc(16* var(--typography-base));
+        line-height: calc(15* var(--typography-base));
+        margin-top: 50px;
+        margin-bottom: 30px
+    }  
+
+    p {
+        font-size: dm sans;
+        font-size: calc(2* var(--typography-base));
+        line-height: calc(2.4* var(--typography-base));
+        width: 760ch;
+    }
+
+    .author {
+        font-family: dm sans;
+        font-weight: 600;
+        font-size: calc(2.5* var(--typography-base));
+   
+    }
+}
 
 /* MEDIA QUERIES - TABLET */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    h1 {
+        font-family: epilogue;
+        font-weight: 900;
+        font-size: calc(10* var(--typography-base));
+        line-height: calc(11* var(--typography-base));
+        margin-top: 50px;
+        margin-bottom: 30px
+    }  
+
+    p {
+        font-size: cardo;
+        font-size: calc(2* var(--typography-base));
+        line-height: calc(2.4* var(--typography-base));
+        width: 75ch;
+    }
+
+    .author {
+        font-family: dm sans;
+        font-weight: 600;
+        font-size: calc(2* var(--typography-base));
+   
+    }
+   
+}
+
 
 /* MEDIA QUERIES - MOBILE */
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+    h1 {
+        font-family: koulen;
+        font-size: calc(6.4* var(--typography-base));
+        line-height: calc(6.4* var(--typography-base));
+        margin-top: 50px;
+        margin-bottom: 30px
+    }   
+    
+p {
+    font-size: dm sans;
+    font-size: calc(1.2* var(--typography-base));
+    line-height: calc(2* var(--typography-base));
+    width: 70%;
+}
 
+.author {
+    font-family: dm sans;
+    font-weight: 600;
+    font-size: calc(2* var(--typography-base));
+}
+}
+
+/* ******************************************************************* */
 /* H1 */
-h1 {
-    font-family: koulen;
-    font-size: calc(16* var(--typography-base));
-    line-height: calc(15* var(--typography-base));
+h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 30px
 }
 
 /* SUB HEADING */
 .author {
-    font-family: dm sans;
-    font-weight: 600;
-    font-size: calc(2.5* var(--typography-base));
-    text-align: center;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
 }
+/* P */
+
+
+/* PULL QUOTES */
+p {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
 footer { 
     background-color: aqua;
