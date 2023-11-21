@@ -8,6 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
+/* ******* */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --typography-base: 16px;
@@ -28,10 +31,11 @@
     
         p {
             font-family: dm sans;
-            font-size: calc(1.5* var(--typography-base));
-            line-height: calc(2.2* var(--typography-base));
+            font-size: calc(1.7* var(--typography-base));
+            line-height: calc(2.8* var(--typography-base));
             font-weight: 400;
             width: 50%;
+            padding-bottom: 50px;
         }
     
         .author {
@@ -39,21 +43,21 @@
             font-weight: 600;
             font-weight: 500;
             font-size: calc(2.5* var(--typography-base));
+            margin-bottom: 100px;
         }
 
         .pull-quote {
             font-family: dm sans;
             width: 50%;
             font-weight: 600;
-            font-size: calc(2.2* var(--typography-base));
-            line-height: calc(3.3* var(--typography-base));
+            font-size: calc(2.4* var(--typography-base));
+            line-height: calc(3.4* var(--typography-base));
             margin-left: 15%;
-        
         }
 
 }
 
-
+/* ******************************************************************* */
 /* MEDIA QUERIES - SMALL LAPTOPS? */
 @media (max-width: 1280px) {
     h1 {
@@ -61,70 +65,96 @@
         font-weight: 400;
         font-size: calc(7.8* var(--typography-base));
         line-height: calc(8.2* var(--typography-base));   
-        margin-top: 50px;
-        margin-bottom: 30px
+        margin-top: 70px;
+        margin-bottom: 60px
     }  
+
+    .heading-identity {
+        font-family: bungee shade;
+        font-weight: 400;
+        font-size: calc(6* var(--typography-base));
+        line-height: calc(6.4* var(--typography-base));   
+        margin-top: 70px;
+        margin-bottom: 60px
+    }
+
+    .author {
+        font-family: dm sans;
+        font-weight: 600;
+        font-size: calc(2* var(--typography-base));
+        margin-bottom: 100px;
+    }
 
     p {
         font-family: dm sans;
         font-weight: 500;
         font-size: calc(1.5* var(--typography-base));
-        line-height: calc(2.2* var(--typography-base));
+        line-height: calc(2.4* var(--typography-base));
         width: 60%;
-    }
-
-    .author {
-        font-family: dm sans;
-        font-weight: 600;
-        font-size: calc(2.5* var(--typography-base));
+        padding-bottom: 40px;
     }
 
     .pull-quote {
         font-family: dm sans;
-        width: 50%;
+        width: 60%;
         font-weight: 600;
         font-size: calc(2.2* var(--typography-base));
-        line-height: calc(3.3* var(--typography-base));
+        line-height: calc(3* var(--typography-base));
         margin-left: 15%;
+        padding-top: 50px;
+        padding-bottom: 50px;
     
     }
 }
-
+/* ******************************************************************* */
 /* MEDIA QUERIES - TABLET */
 @media (max-width: 768px) {
     h1 {
         font-family: epilogue;
         font-weight: 800;
-        font-size: calc(7.5* var(--typography-base));
-        line-height: calc(8* var(--typography-base));
+        font-size: calc(8.5* var(--typography-base));
+        line-height: calc(9.2* var(--typography-base));
         margin-top: 50px;
         margin-bottom: 30px
     }  
 
+    .heading-identity {
+        font-family: epilogue;
+        font-weight: 800;
+        font-size: calc(5* var(--typography-base));
+        line-height: calc(5.5* var(--typography-base));
+        margin-top: 50px;
+        margin-bottom: 30px
+    }
+
     .author {
-        font-family: inclusive sans;
+        font-family: hanken grotesk;
         font-weight: 600;
         font-size: calc(2* var(--typography-base));
+        margin-bottom: 70px;
     }
 
     p {
-        font-family: cardo;
+        font-family: hanken grotesk;
+        font-weight: 400;
         font-size: calc(1.5* var(--typography-base));
         line-height: calc(2.2* var(--typography-base));
-        width: 60%;
+        width: 80%;
     }
 
     .pull-quote {
-        font-family: inclusive sans;
-        width: 65%;
+        font-family: staatliches;
+        width: 80%;
         font-weight: 600;
-        font-size: calc(2* var(--typography-base));
-        line-height: calc(2.8* var(--typography-base));
-        margin-left: 15%;
+        font-size: calc(3* var(--typography-base));
+        line-height: calc(3.6* var(--typography-base));
+        margin: auto;
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
 }
 
-
+/* ******************************************************************* */
 /* MEDIA QUERIES - MOBILE */
 @media (max-width: 400px) {
     h1 {
@@ -134,28 +164,38 @@
         margin-top: 50px;
         margin-bottom: 30px
     }   
+
+    .heading-identity {
+        font-family: koulen;
+        font-size: calc(3.9* var(--typography-base));
+        line-height: calc(4.6* var(--typography-base));
+        margin-top: 50px;
+        margin-bottom: 30px
+    }
+
+    .author {
+        font-family: dm mono;
+        font-weight: 500;
+        font-size: calc(1.8* var(--typography-base));
+        margin-bottom: 60px;
+    }
     
-
-.author {
-    font-family: dm sans;
-    font-weight: 500;
-    font-size: calc(1.8* var(--typography-base));
-}
-
-p {
-    font-size: dm sans;
-    font-size: calc(1.5* var(--typography-base));
-    line-height: calc(2.3* var(--typography-base));
-    width: 80%;
-}
-
-.pull-quote {
-    font-family: dm mono;
-    width: 80%;
-    font-weight: 500;
-    font-size: calc(1.6* var(--typography-base));
-    line-height: calc(2.2* var(--typography-base));
-    margin-left: auto;
+    p {
+        font-family: cardo;
+        font-size: calc(1.5* var(--typography-base));
+        line-height: calc(2.4* var(--typography-base));
+        width: 85%;
+    }
+    
+    .pull-quote {
+        font-family: dm mono;
+        width: 85%;
+        font-weight: 500;
+        font-size: calc(1.5* var(--typography-base));
+        line-height: calc(2.2* var(--typography-base));
+        margin: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
 }
 
 }
@@ -173,7 +213,6 @@ h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
 }
 /* P */
 
