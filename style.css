@@ -34,7 +34,7 @@
             font-family: bungee shade;
             font-weight: 400;
             font-size: calc(7* var(--typography-base));
-            line-height: calc(7.4* var(--typography-base)); 
+            line-height: calc(7.8* var(--typography-base)); 
             width: 80%;  
             margin-top: 100px;
             margin-bottom: 80px
@@ -42,8 +42,8 @@
     
         p {
             font-family: dm sans;
-            font-size: calc(1.7* var(--typography-base));
-            line-height: calc(2.8* var(--typography-base));
+            font-size: calc(1.6* var(--typography-base));
+            line-height: calc(2.7* var(--typography-base));
             font-weight: 400;
             width: 50%;
             padding-bottom: 50px;
@@ -236,9 +236,29 @@ p {
 
 }
 
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2ch;
+    text-align: center;
+    padding: 0.5ch;
+    border-radius: 100px;
+    font-family: dm sans;
+    display: flex;
+	flex-direction: row;
+    background-color: bisque;
+    color: white;
+    width: 50%;
+}
+
+li {
+    padding: 5px;
+    width: 25%;
+}
+
 
 footer { 
-    background-color: aqua;
+    background-color: hotpink;
     font-family: inclusive sans;
     font-weight: 700;
     padding: 30px;
