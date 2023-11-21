@@ -35,58 +35,60 @@
     }
     
     h1 {
-            font-family: bungee shade;
-            font-weight: 400;
-            font-size: calc(9* var(--typography-base));
-            line-height: calc(9.5* var(--typography-base));
-            width: 75%;
-            margin-top: 100px;
-            margin-bottom: 80px
+        font-family: bungee shade;
+        font-weight: 400;
+        font-size: calc(9* var(--typography-base));
+        line-height: calc(9.5* var(--typography-base));
+        width: 75%;
+        margin-top: 100px;
+        margin-bottom: 80px
         }  
 
     .heading-identity {
-            font-family: bungee shade;
-            font-weight: 400;
-            font-size: calc(7* var(--typography-base));
-            line-height: calc(7.8* var(--typography-base)); 
-            width: 80%;  
-            margin-top: 100px;
-            margin-bottom: 80px
+        font-family: bungee shade;
+        font-weight: 400;
+        font-size: calc(7* var(--typography-base));
+        line-height: calc(7.8* var(--typography-base)); 
+        width: 80%;  
         }
 
     .heading-introduction {
-            font-family: koulen;
-            font-size: calc(10* var(--typography-base));
-            line-height: calc(11* var(--typography-base)); 
-            width: 80%;  
-            margin-top: 100px;
-            margin-bottom: 80px
+        font-family: koulen;
+        font-size: calc(10* var(--typography-base));
+        line-height: calc(11* var(--typography-base)); 
+        width: 80%;  
+        }
+    
+    .text-name {
+        font-family: koulen;
+        font-size: calc(4* var(--typography-base));
+        line-height: calc(5* var(--typography-base)); 
         }
     
     p {
-            font-family: dm sans;
-            font-size: calc(1.6* var(--typography-base));
-            line-height: calc(2.7* var(--typography-base));
-            font-weight: 400;
-            width: 50%;
-            padding-bottom: 50px;
+        font-family: dm sans;
+        font-size: calc(1.6* var(--typography-base));
+        line-height: calc(2.7* var(--typography-base));
+        font-weight: 400;
+        width: 50%;
+        padding-bottom: 50px;
         }
     
     .author {
-            font-family: dm sans;
-            font-weight: 600;
-            font-weight: 500;
-            font-size: calc(2.5* var(--typography-base));
-            margin-bottom: 100px;
+        font-family: dm sans;
+        font-weight: 600;
+        font-weight: 500;
+        font-size: calc(2.5* var(--typography-base));
+        margin-bottom: 100px;
         }
 
      .pull-quote {
-            font-family: dm sans;
-            width: 50%;
-            font-weight: 600;
-            font-size: calc(2.4* var(--typography-base));
-            line-height: calc(3.4* var(--typography-base));
-            margin-left: 15%;
+        font-family: dm sans;
+        width: 50%;
+        font-weight: 600;
+        font-size: calc(2.4* var(--typography-base));
+        line-height: calc(3.4* var(--typography-base));
+        margin-left: 15%;
         }
 
 }
@@ -118,6 +120,19 @@
         margin-bottom: 60px;
         width: 65%;
     }
+
+    .heading-introduction {
+        font-family: koulen;
+        font-size: calc(10* var(--typography-base));
+        line-height: calc(11* var(--typography-base)); 
+        width: 80%;  
+        }
+    
+    .text-name {
+        font-family: koulen;
+        font-size: calc(3.2* var(--typography-base));
+        line-height: calc(4.2* var(--typography-base)); 
+        }
 
     .author {
         font-family: dm sans;
@@ -173,6 +188,20 @@
         margin-bottom: 30px
     }
 
+    .heading-introduction {
+        font-family: epilogue;
+        font-size: calc(5.5* var(--typography-base));
+        line-height: calc(6.4* var(--typography-base)); 
+        width: 80%;  
+        }
+    
+    .text-name {
+        font-family: epilogue;
+        font-weight: 700;
+        font-size: calc(2.6* var(--typography-base));
+        line-height: calc(3.6* var(--typography-base)); 
+        }
+
     .author {
         font-family: hanken grotesk;
         font-weight: 600;
@@ -224,6 +253,21 @@
         margin-bottom: 30px
     }
 
+    .heading-introduction {
+        text-align: left;
+        font-family: dm mono;
+        font-size: calc(3* var(--typography-base));
+        line-height: calc(3.6* var(--typography-base)); 
+        width: 80%;  
+        }
+    
+    .text-name {
+        font-family: dm mono;
+        font-weight: 500;
+        font-size: calc(2* var(--typography-base));
+        line-height: calc(3* var(--typography-base)); 
+        }
+
     .author {
         font-family: dm mono;
         font-weight: 500;
@@ -264,17 +308,24 @@ h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-/* P */
 
+}
 
 /* PULL QUOTES */
+.text-name {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* P */
 p {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-
 }
+
+/* PULL QUOTES */
+
 
 /* ******************************************************************* */
 /* OMG, IT'S THE NAVBAR! PAIN IN MY FUCKING BUTT */
@@ -301,7 +352,8 @@ li {
     width: 25%;
 }
 
-
+/* ******************************************************************* */
+/* BUTTONS */
 .gradient-buttons {
     display: flex;
     flex-direction: row;
@@ -322,10 +374,17 @@ button {
     font-size: calc(1.5* var(--typography-base));
     padding: calc(1.5* var(--spacing));
     border-radius: var(--spacing);
+    border-style: solid;
     stroke-width: 3px;
     border-color: var(--darkgrey);
     background-color: var(--white);
     color: var(--darkgrey);
+}
+
+button:hover {
+    background-color: var(--darkgrey);
+    color: var(--white);
+
 }
 
 /* ******************************************************************* */
