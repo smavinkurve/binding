@@ -19,6 +19,7 @@
     --spacing: 10px;
     /* background-image: linear-gradient(rgb(248, 175, 175), rgb(188, 168, 234)); */
     /* background-image: linear-gradient(rgb(233, 233, 233), rgb(123, 123, 123)); */
+    /* background-image: linear-gradient(rgb(189, 230, 255), rgb(62, 181, 255)); */
     /* background-image: linear-gradient(rgb(255, 231, 76), rgb(255, 164, 36)); */
     /* background-image: linear-gradient(#F3CFC6, rgb(198, 231, 195)); */
 
@@ -42,6 +43,15 @@
             font-weight: 400;
             font-size: calc(7* var(--typography-base));
             line-height: calc(7.8* var(--typography-base)); 
+            width: 80%;  
+            margin-top: 100px;
+            margin-bottom: 80px
+        }
+
+        .heading-introduction {
+            font-family: koulen;
+            font-size: calc(10* var(--typography-base));
+            line-height: calc(11* var(--typography-base)); 
             width: 80%;  
             margin-top: 100px;
             margin-bottom: 80px
@@ -84,7 +94,8 @@
         font-size: calc(7.8* var(--typography-base));
         line-height: calc(8.2* var(--typography-base));   
         margin-top: 70px;
-        margin-bottom: 60px
+        margin-bottom: 60px;
+        width: 70%; 
     }  
 
     .heading-identity {
@@ -93,7 +104,8 @@
         font-size: calc(6* var(--typography-base));
         line-height: calc(6.4* var(--typography-base));   
         margin-top: 70px;
-        margin-bottom: 60px
+        margin-bottom: 60px;
+        width: 70%;
     }
 
     .author {
@@ -243,6 +255,8 @@ p {
 
 }
 
+/* ******************************************************************* */
+/* OMG, IT'S THE NAVBAR! PAIN IN MY FUCKING BUTT */
 .navbar {
     margin-left: auto;
     margin-right: auto;
@@ -253,7 +267,7 @@ p {
     font-family: dm sans;
     display: flex;
 	flex-direction: row;
-    background-color: bisque;
+    background-color: var(--darkgrey);
     color: white;
     width: 50%;
 }
@@ -261,25 +275,6 @@ p {
 li {
     padding: 5px;
     width: 25%;
-}
-
-
-footer { 
-    background-color: hotpink;
-    font-family: inclusive sans;
-    font-weight: 700;
-    padding: 30px;
-
-}
-
-.footer-text {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 10%;
-    text-align: left;
-    color: black;
 }
 
 
@@ -301,8 +296,30 @@ button {
     font-family: inclusive sans;
     font-weight: 400;
     font-size: calc(1.5* var(--typography-base));
-    padding: var(--spacing);
-    border-radius: 10px;
-    border-color: black;
-    background-color: white;
+    padding: calc(1.5* var(--spacing));
+    border-radius: var(--spacing);
+    stroke-width: 3px;
+    border-color: var(--darkgrey);
+    background-color: var(--darkgrey);
+    color: white;
+}
+
+/* ******************************************************************* */
+/* FOOTER */
+footer { 
+    background-color: var(--darkgrey);
+    font-family: inclusive sans;
+    font-weight: 700;
+    padding: 30px;
+
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    text-align: left;
+    color: white;
 }
