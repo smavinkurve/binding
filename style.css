@@ -29,7 +29,11 @@
 }
 /* MEDIA QUERIES - LARGE SCREENS */
 @media (min-width: 1280px) {
-        h1 {
+    .navbar {
+        width: 50%;
+    }
+    
+    h1 {
             font-family: bungee shade;
             font-weight: 400;
             font-size: calc(9* var(--typography-base));
@@ -39,7 +43,7 @@
             margin-bottom: 80px
         }  
 
-        .heading-identity {
+    .heading-identity {
             font-family: bungee shade;
             font-weight: 400;
             font-size: calc(7* var(--typography-base));
@@ -49,7 +53,7 @@
             margin-bottom: 80px
         }
 
-        .heading-introduction {
+    .heading-introduction {
             font-family: koulen;
             font-size: calc(10* var(--typography-base));
             line-height: calc(11* var(--typography-base)); 
@@ -58,7 +62,7 @@
             margin-bottom: 80px
         }
     
-        p {
+    p {
             font-family: dm sans;
             font-size: calc(1.6* var(--typography-base));
             line-height: calc(2.7* var(--typography-base));
@@ -67,7 +71,7 @@
             padding-bottom: 50px;
         }
     
-        .author {
+    .author {
             font-family: dm sans;
             font-weight: 600;
             font-weight: 500;
@@ -75,7 +79,7 @@
             margin-bottom: 100px;
         }
 
-        .pull-quote {
+     .pull-quote {
             font-family: dm sans;
             width: 50%;
             font-weight: 600;
@@ -89,6 +93,10 @@
 /* ******************************************************************* */
 /* MEDIA QUERIES - SMALL LAPTOPS? */
 @media (max-width: 1280px) {
+    .navbar {
+        width: 60%;
+    }
+
     h1 {
         font-family: bungee shade;
         font-weight: 400;
@@ -140,6 +148,10 @@
 /* ******************************************************************* */
 /* MEDIA QUERIES - TABLET */
 @media (max-width: 768px) {
+    .navbar {
+        width: 70%;
+    }
+
     h1 {
         font-family: epilogue;
         font-weight: 800;
@@ -188,6 +200,10 @@
 /* ******************************************************************* */
 /* MEDIA QUERIES - MOBILE */
 @media (max-width: 400px) {
+    .navbar {
+        width: 85%;
+    }
+
     h1 {
         font-family: koulen;
         font-size: calc(6.4* var(--typography-base));
@@ -265,7 +281,6 @@ p {
     padding: 1.5ch;
     display: flex;
 	flex-direction: row;
-    width: 50%;
     font-family: dm sans;
     text-align: center;
     border-radius: 100px;
@@ -274,7 +289,6 @@ p {
     stroke-width: 10px;
     background-color: var(--white);
     color: var(--darkgrey);
-    filter: drop-shadow(10px,10px);
 }
 
 li {
