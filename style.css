@@ -23,11 +23,22 @@
         h1 {
             font-family: bungee shade;
             font-weight: 400;
-            font-size: calc(7.8* var(--typography-base));
-            line-height: calc(8.2* var(--typography-base));
-            margin-top: 50px;
-            margin-bottom: 30px
+            font-size: calc(9* var(--typography-base));
+            line-height: calc(9.5* var(--typography-base));
+            width: 75%;
+            margin-top: 100px;
+            margin-bottom: 80px
         }  
+
+        .heading-identity {
+            font-family: bungee shade;
+            font-weight: 400;
+            font-size: calc(7* var(--typography-base));
+            line-height: calc(7.4* var(--typography-base)); 
+            width: 80%;  
+            margin-top: 100px;
+            margin-bottom: 80px
+        }
     
         p {
             font-family: dm sans;
