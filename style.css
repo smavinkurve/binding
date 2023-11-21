@@ -274,3 +274,25 @@ footer {
     text-align: left;
     color: black;
 }
+
+.gradient-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: auto; */
+    /* width: 50%;   */
+    font-family: inclusive sans;
+    font-weight: 400;
+    font-size: calc(1.5* var(--typography-base));
+    padding: var(--spacing);
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+}
