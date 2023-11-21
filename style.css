@@ -11,12 +11,19 @@
 /* ******* */
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ******************************************************************* */
+
 
 :root {
     --typography-base: 16px;
     --spacing: 10px;
+    /* background-image: linear-gradient(rgb(248, 175, 175), rgb(188, 168, 234)); */
+    /* background-image: linear-gradient(rgb(233, 233, 233), rgb(123, 123, 123)); */
+    /* background-image: linear-gradient(rgb(255, 231, 76), rgb(255, 164, 36)); */
+    /* background-image: linear-gradient(#F3CFC6, rgb(198, 231, 195)); */
 
     --black: black;
+    --darkgrey: #0B0B0B;
 }
 /* MEDIA QUERIES - LARGE SCREENS */
 @media (min-width: 1280px) {
@@ -275,19 +282,22 @@ footer {
     color: black;
 }
 
+
 .gradient-buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 100px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button {
     margin-left: auto;
     margin-right: auto;
-    /* margin: auto; */
-    /* width: 50%;   */
+    /* align-items: center; */
     font-family: inclusive sans;
     font-weight: 400;
     font-size: calc(1.5* var(--typography-base));
