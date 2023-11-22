@@ -50,7 +50,7 @@
         font-weight: 400;
         font-size: calc(7* var(--typography-base));
         line-height: calc(7.8* var(--typography-base)); 
-        width: 80%;  
+        width: 80%; 
         }
 
     .heading-introduction {
@@ -179,7 +179,7 @@
         font-size: calc(8.5* var(--typography-base));
         line-height: calc(9.2* var(--typography-base));
         margin-top: 50px;
-        margin-bottom: 30px
+        margin-bottom: 30px;
     }  
 
     .heading-identity {
@@ -188,7 +188,7 @@
         font-size: calc(5* var(--typography-base));
         line-height: calc(5.5* var(--typography-base));
         margin-top: 50px;
-        margin-bottom: 30px
+        margin-bottom: 30px;
     }
 
     .heading-introduction {
@@ -303,6 +303,11 @@ h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.heading-identity {
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 /* SUB HEADING */
