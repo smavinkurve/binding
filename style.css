@@ -72,6 +72,7 @@
         font-weight: 400;
         width: 50%;
         padding-bottom: 50px;
+        padding-bottom: 50px;
         }
     
     .author {
@@ -147,6 +148,7 @@
         font-size: calc(1.5* var(--typography-base));
         line-height: calc(2.4* var(--typography-base));
         width: 60%;
+        padding-top: 40px;
         padding-bottom: 40px;
     }
 
@@ -324,11 +326,25 @@ p {
     margin-right: auto;
 }
 
-/* PULL QUOTES */
+/* ******************************************************************* */
+/* SECTIONS ARTICLE 3 */
+.section-feeling {
+    background-color: var(--white);
+    border-radius: 70px;
+    /* border-style: solid; */
+    /* border-color: var(--darkgrey); */
+    /* stroke-width: 10px; */
+    padding-top: 70px;
+    padding-bottom: 50px;
+    /* margin-top: 10ch; */
+}
 
+.section-feeling:hover {
+     background-image: linear-gradient(rgb(248, 175, 175), rgb(188, 168, 234));
+}
 
 /* ******************************************************************* */
-/* OMG, IT'S THE NAVBAR! PAIN IN MY FUCKING BUTT */
+/* NAVBAR */
 .navbar {
     margin-left: auto;
     margin-right: auto;
@@ -393,7 +409,9 @@ footer {
     background-color: var(--darkgrey);
     font-family: inclusive sans;
     font-weight: 700;
-    padding: 30px;
+    margin-top: 10ch;
+    padding-top: 5ch;
+    padding-bottom: 5ch;
 
 }
 
@@ -402,7 +420,7 @@ footer {
     justify-content: space-evenly;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     text-align: left;
     color: var(--white);
 }
