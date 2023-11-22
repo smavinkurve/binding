@@ -22,6 +22,7 @@
     /* background-image: linear-gradient(rgb(189, 230, 255), rgb(62, 181, 255)); */
     /* background-image: linear-gradient(rgb(255, 231, 76), rgb(255, 164, 36)); */
     /* background-image: linear-gradient(#F3CFC6, rgb(198, 231, 195)); */
+    /* background-image: linear-gradient(rgb(255, 255, 255), rgb(235, 227, 216)); */
 
     --black: black;
     --white: white; 
@@ -294,7 +295,6 @@
         padding-top: 40px;
         padding-bottom: 40px;
 }
-
 }
 
 /* ******************************************************************* */
@@ -327,8 +327,8 @@ p {
 }
 
 /* ******************************************************************* */
-/* SECTIONS ARTICLE 3 */
-.section-feeling {
+/* SECTIONS ARTICLE 1 */
+.section-feeling-1, .section-feeling-2, .section-feeling-3, .section-feeling-4, .section-feeling-5, .section-feeling-6{
     background-color: var(--white);
     border-radius: 70px;
     /* border-style: solid; */
@@ -339,10 +339,30 @@ p {
     /* margin-top: 10ch; */
 }
 
-.section-feeling:hover {
+  
+.section-feeling-1:hover {
      background-image: linear-gradient(rgb(248, 175, 175), rgb(188, 168, 234));
 }
 
+.section-feeling-2:hover {
+    background-image: linear-gradient(rgb(233, 233, 233), rgb(123, 123, 123)); 
+}
+
+.section-feeling-3:hover {
+    background-image: linear-gradient(rgb(189, 230, 255), rgb(62, 181, 255));
+}
+
+.section-feeling-4:hover {
+    background-image: linear-gradient(rgb(255, 231, 76), rgb(255, 164, 36));
+}
+
+.section-feeling-5:hover {
+    background-image: linear-gradient(#ffd2d6, rgb(198, 231, 195)); 
+}
+
+.section-feeling-6:hover {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(235, 227, 216));
+}
 /* ******************************************************************* */
 /* NAVBAR */
 .navbar {
