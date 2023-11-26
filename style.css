@@ -1,21 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+/* ******* */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+/* ******* */
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 /* ******* */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* ******* */
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+/* ******* */
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+/* ******* */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+/* ******* */
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
 /* ******* */
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Linefont:wght@100&display=swap');
+/* ******* */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 /* ******************************************************************* */
 
 
 :root {
+    --heading-font-1: 'Bungee Shade', sans-serif;
+    --heading-font-2: 'Silkscreen', sans-serif;
+    --heading-font-3: 'Koulen', sans-serif;
+    --heading-font-4: 'Epilogue', sans-serif;
+    --heading-font-5: 'DM Serif Display', serif;
+
+    --body-font-1: 'DM Sans', sans-serif;
+    --body-font-2: 'Epilogue', sans-serif;
+    --body-font-3: 'Cardo', serif;
+    --body-font-4: 'DM Mono', monospace;
+    --body-font-5: 'Inclusive Sans', sans-serif;
+
     --typography-base: 16px;
     --spacing: 10px;
 
@@ -26,286 +43,40 @@
 }
 /* MEDIA QUERIES - LARGE SCREENS */
 @media (min-width: 1280px) {
-    .navbar {
-        width: 55%;
-        font-size: calc(1.2* var(--typography-base));
-    }
-    
-    h1 {
-        font-family: bungee shade;
-        font-weight: 400;
-        font-size: calc(9* var(--typography-base));
-        line-height: calc(9.5* var(--typography-base));
-        width: 75%;
-        margin-top: 100px;
-        margin-bottom: 80px
-        }  
-
-    .heading-identity {
-        font-family: bungee shade;
-        font-weight: 400;
-        font-size: calc(7* var(--typography-base));
-        line-height: calc(7.8* var(--typography-base)); 
-        width: 80%; 
-        }
-
-    .heading-identity:hover {
-        font-family: silkscreen; 
-    }
-
-    .heading-introduction {
-        font-family: koulen;
-        font-size: calc(10* var(--typography-base));
-        line-height: calc(11* var(--typography-base)); 
-        width: 80%;  
-        }
-    
-    .text-name {
-        font-family: koulen;
-        font-size: calc(4* var(--typography-base));
-        line-height: calc(5* var(--typography-base)); 
-        }
-    
-    p {
-        font-family: dm sans;
-        font-size: calc(1.6* var(--typography-base));
-        line-height: calc(2.7* var(--typography-base));
-        font-weight: 400;
-        width: 50%;
-        padding-bottom: 50px;
-        padding-bottom: 50px;
-        }
-    
-    .author {
-        font-family: dm sans;
-        font-weight: 600;
-        font-weight: 500;
-        font-size: calc(2.5* var(--typography-base));
-        margin-bottom: 100px;
-        }
-
-     .pull-quote {
-        font-family: dm sans;
-        width: 50%;
-        font-weight: 600;
-        font-size: calc(2.4* var(--typography-base));
-        line-height: calc(3.4* var(--typography-base));
-        margin-left: 15%;
-        }
-
 }
 
-/* ******************************************************************* */
-/* MEDIA QUERIES - SMALL LAPTOPS? */
-@media (max-width: 1280px) {
-    .navbar {
-        width: 65%;
-        font-size: calc(1.2* var(--typography-base));
-    }
 
-    h1 {
-        font-family: bungee shade;
-        font-weight: 400;
-        font-size: calc(7.8* var(--typography-base));
-        line-height: calc(8.2* var(--typography-base));   
-        margin-top: 70px;
-        margin-bottom: 60px;
-        width: 70%; 
-    }  
-
-    .heading-identity {
-        font-family: bungee shade;
-        font-weight: 400;
-        font-size: calc(6* var(--typography-base));
-        line-height: calc(6.4* var(--typography-base));   
-        margin-top: 70px;
-        margin-bottom: 60px;
-        width: 65%;
-    }
-
-    .heading-identity:hover {
-        font-family: silkscreen; 
-    }
-
-    .heading-introduction {
-        font-family: koulen;
-        font-size: calc(10* var(--typography-base));
-        line-height: calc(11* var(--typography-base)); 
-        width: 80%;  
-        }
-    
-    .text-name {
-        font-family: koulen;
-        font-size: calc(3.2* var(--typography-base));
-        line-height: calc(4.2* var(--typography-base)); 
-        }
-
-    .author {
-        font-family: dm sans;
-        font-weight: 600;
-        font-size: calc(2* var(--typography-base));
-        margin-bottom: 100px;
-    }
-
-    p {
-        font-family: dm sans;
-        font-weight: 500;
-        font-size: calc(1.5* var(--typography-base));
-        line-height: calc(2.4* var(--typography-base));
-        width: 60%;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .pull-quote {
-        font-family: dm sans;
-        width: 60%;
-        font-weight: 600;
-        font-size: calc(2.2* var(--typography-base));
-        line-height: calc(3* var(--typography-base));
-        margin-left: 15%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    
-    }
-}
-
-/* ******************************************************************* */
-/* MEDIA QUERIES - TABLET */
-@media (max-width: 768px) {
-    .navbar {
-        width: 70%;
-        font-size: calc(0.9* var(--typography-base));
-    }
-
-    h1 {
-        font-family: epilogue;
-        font-weight: 800;
-        font-size: calc(8.5* var(--typography-base));
-        line-height: calc(9.2* var(--typography-base));
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }  
-
-    .heading-identity {
-        font-family: epilogue;
-        font-weight: 800;
-        font-size: calc(5* var(--typography-base));
-        line-height: calc(5.5* var(--typography-base));
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-
-    .heading-introduction {
-        font-family: epilogue;
-        font-size: calc(5.5* var(--typography-base));
-        line-height: calc(6.4* var(--typography-base)); 
-        width: 80%;  
-        }
-    
-    .text-name {
-        font-family: epilogue;
-        font-weight: 700;
-        font-size: calc(2.6* var(--typography-base));
-        line-height: calc(3.6* var(--typography-base)); 
-        }
-
-    .author {
-        font-family: hanken grotesk;
-        font-weight: 600;
-        font-size: calc(2* var(--typography-base));
-        margin-bottom: 70px;
-    }
-
-    p {
-        font-family: hanken grotesk;
-        font-weight: 400;
-        font-size: calc(1.5* var(--typography-base));
-        line-height: calc(2.2* var(--typography-base));
-        width: 80%;
-    }
-
-    .pull-quote {
-        font-family: staatliches;
-        width: 80%;
-        font-weight: 600;
-        font-size: calc(3* var(--typography-base));
-        line-height: calc(3.6* var(--typography-base));
-        margin: auto;
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-}
-
-/* ******************************************************************* */
-/* MEDIA QUERIES - MOBILE */
-@media (max-width: 400px) {
-    .navbar {
-        width: 90%;
-        font-size: calc(0.7* var(--typography-base));
-    }
-
-    h1 {
-        font-family: koulen;
-        font-size: calc(6.4* var(--typography-base));
-        line-height: calc(6.4* var(--typography-base));
-        margin-top: 50px;
-        margin-bottom: 30px
-    }   
-
-    .heading-identity {
-        font-family: koulen;
-        font-size: calc(3.9* var(--typography-base));
-        line-height: calc(4.6* var(--typography-base));
-        margin-top: 50px;
-        margin-bottom: 30px
-    }
-
-    .heading-introduction {
-        text-align: left;
-        font-family: dm mono;
-        font-size: calc(3* var(--typography-base));
-        line-height: calc(3.6* var(--typography-base)); 
-        width: 80%;  
-        }
-    
-    .text-name {
-        font-family: dm mono;
-        font-weight: 500;
-        font-size: calc(2* var(--typography-base));
-        line-height: calc(3* var(--typography-base)); 
-        }
-
-    .author {
-        font-family: dm mono;
-        font-weight: 500;
-        font-size: calc(1.8* var(--typography-base));
-        margin-bottom: 60px;
-    }
-    
-    p {
-        font-family: cardo;
-        font-size: calc(1.5* var(--typography-base));
-        line-height: calc(2.4* var(--typography-base));
-        width: 85%;
-    }
-    
-    .pull-quote {
-        font-family: dm mono;
-        width: 85%;
-        font-weight: 500;
-        font-size: calc(1.5* var(--typography-base));
-        line-height: calc(2.2* var(--typography-base));
-        margin: auto;
-        padding-top: 40px;
-        padding-bottom: 40px;
-}
-}
 
 /* ******************************************************************* */
 /* H1 */
 h1{
+    font-family: var(--heading-font-4);
+    font-size: calc(3* var(--typography-base));
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* AUTHOR NAME */
+.author {
+    font-family: var(--body-font-5);
+    font-size: calc(1.5* var(--typography-base));
+
+}
+
+/* P */
+p {
+    font-family: var(--body-font-1);
+    font-size: var(--typography-base);
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* PULL QUOTES */
+.pull-quote {
+    font-family: var(--body-font-4);
+    font-size: calc(1.5* var(--typography-base));
     margin-left: auto;
     margin-right: auto;
 }
@@ -322,18 +93,12 @@ h1{
     margin-right: auto;
 }
 
-/* PULL QUOTES */
+/* HOME PAGE TEXT NAMES */
 .text-name {
     margin-left: auto;
     margin-right: auto;
 }
 
-/* P */
-p {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* ******************************************************************* */
 /* SECTIONS ARTICLE 1 */
