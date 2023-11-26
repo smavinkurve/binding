@@ -42,7 +42,7 @@
     --darkgrey: #0B0B0B;
 }
 /* MEDIA QUERIES - LARGE SCREENS */
-@media (min-width: 1280px) {
+@media (min-width: 790px) {
 }
 
 
@@ -51,7 +51,7 @@
 /* H1 */
 h1{
     font-family: var(--heading-font-1);
-    font-size: calc(3* var(--typography-base));
+    font-size: calc(3.6* var(--typography-base));
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -69,18 +69,21 @@ h1{
 
 /* P */
 p {
-    font-family: var(--body-font-1);
+    font-family: calc(1.2*var(--body-font-1));
     font-size: var(--typography-base);
+    line-height: calc(1.7* var(--typography-base));
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
     width: 80%;
 }
 
 /* PULL QUOTES */
 .pull-quote {
     font-family: var(--body-font-4);
-    font-size: calc(1.3* var(--typography-base));
+    font-size: calc(1.2* var(--typography-base));
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
@@ -132,12 +135,29 @@ nav {
 
 .navbar-button {
     font-family: var(--body-font-1);
-    font-size: calc(1.2* var(--typography-base));
+    font-size: calc(1.1* var(--typography-base));
     font-weight: 500;
     border-style: solid;
     border-radius: 0.8em;
     stroke-width: 2px;
     padding: 0.5em;
+}
+
+/* ******************************************************************* */
+/* GO TO TOP BUTTON */
+.top-button {
+    position: fixed;
+    right: 30px;
+    z-index: 99;
+    bottom:5em;
+    /* height: 64px; */
+    background-color: var(--white);
+    border-style: solid;
+    border-radius: 0.8em;
+    stroke-width: 2px;
+    padding: 0.7em 2em 0.7em 2em;
+    font-family: var(--body-font-1);
+    font-size: calc(1.1* var(--typography-base));
 }
 
 
