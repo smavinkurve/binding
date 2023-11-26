@@ -41,10 +41,6 @@
     --white: white; 
     --darkgrey: #0B0B0B;
 }
-/* MEDIA QUERIES - LARGE SCREENS */
-@media (min-width: 790px) {
-}
-
 
 
 /* ******************************************************************* */
@@ -55,7 +51,14 @@ h1{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2.2em;
+    margin-top: 2em;
+}
+
+.heading-identity {
+    font-family: var(--heading-font-1);
+    font-size: calc(2.6* var(--typography-base));
+    -webkit-hyphens: auto;
+    hyphens: auto;
 }
 
 /* AUTHOR NAME */
@@ -64,19 +67,21 @@ h1{
     font-size: calc(1.5* var(--typography-base));
     margin-top: 1em;
     margin-bottom: 1em;
-
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* P */
 p {
-    font-family: calc(1.2*var(--body-font-1));
+    font-family: var(--body-font-1);
     font-size: var(--typography-base);
     line-height: calc(1.7* var(--typography-base));
     text-align: left;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     width: 80%;
 }
 
@@ -86,21 +91,11 @@ p {
     font-size: calc(1.2* var(--typography-base));
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.heading-identity {
-    -webkit-hyphens: auto;
-    hyphens: auto;
+    margin-top: 2em;
+    /* margin-bottom: 1em; */
 }
 
 /* SUB HEADING */
-.author {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* HOME PAGE TEXT NAMES */
 .text-name {
@@ -115,23 +110,26 @@ nav {
 }
 
 .navbar {
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    border-style: solid;
-    stroke-width: 2px;
-
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
     background-color: var(--white);
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
+    border-style: solid;
+    stroke-width: 2px;
+}
 
+.buttons-mobile {
+    width: 100%;
     display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
-    gap: calc(1.2* var(--spacing));
+    gap: var(--spacing);
 }
-
 
 .navbar-button {
     font-family: var(--body-font-1);
@@ -143,11 +141,15 @@ nav {
     padding: 0.5em;
 }
 
+.randomize {
+    visibility: hidden;
+}
+
 /* ******************************************************************* */
 /* GO TO TOP BUTTON */
 .top-button {
     position: fixed;
-    right: 30px;
+    right: 2em;
     z-index: 99;
     bottom:7em;
     background-color: var(--white);
@@ -157,6 +159,11 @@ nav {
     padding: 0.7em 2em 0.7em 2em;
     font-family: var(--body-font-1);
     font-size: calc(1.1* var(--typography-base));
+}
+
+button:hover {
+    background-color: var(--darkgrey);
+    color: var(--white);
 }
 
 
@@ -193,39 +200,6 @@ nav {
 
 
 /* ******************************************************************* */
-/* BUTTONS */
-.gradient-buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 100px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* button {
-    margin-left: auto;
-    margin-right: auto;
-    font-family: inclusive sans;
-    font-weight: 400;
-    font-size: calc(1.5* var(--typography-base));
-    padding: calc(1.5* var(--spacing));
-    border-radius: var(--spacing);
-    border-style: solid;
-    stroke-width: 3px;
-    border-color: var(--darkgrey);
-    background-color: var(--white);
-    color: var(--darkgrey);
-} */
-
-button:hover {
-    background-color: var(--darkgrey);
-    color: var(--white);
-}
-
-/* ******************************************************************* */
 /* FOOTER */
 footer { 
     font-family: var(--body-font-1);
@@ -244,4 +218,61 @@ footer {
     margin: auto;
     text-align: left;
     color: var(--white);
+}
+
+/* ******************************************************************* */
+/* MEDIA QUERIES - LARGE SCREENS */
+@media (min-width: 775px) {
+    h1{
+        width: 70%;
+        font-size: calc(8* var(--typography-base));
+        margin-top: 2.2em;
+    }
+    
+    .heading-identity {
+        width: 75%;
+        font-size: calc(6* var(--typography-base));
+    }
+    
+    /* AUTHOR NAME */
+    .author {
+        font-family: var(--body-font-5);
+        font-size: calc(1.5* var(--typography-base));
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* P */
+    p {
+        font-family: var(--body-font-1);
+        font-size: var(--typography-base);
+        line-height: calc(1.7* var(--typography-base));
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        /* margin-bottom: 1em; */
+        width: 80%;
+    }
+    
+    /* PULL QUOTES */
+    .pull-quote {
+        font-family: var(--body-font-4);
+        font-size: calc(1.2* var(--typography-base));
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2em;
+        /* margin-bottom: 1em; */
+    }
+
+    .buttons-mobile {
+        gap: calc(2* var(--spacing));
+    }
+
+    .randomize {
+        visibility: visible;
+    }
 }
