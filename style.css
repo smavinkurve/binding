@@ -68,16 +68,18 @@ h2 {
     font-family: var(--body-font-1);
     font-weight: 700;
     font-size: calc(2* var(--typography-base));
-    margin-top: 2em;
+    margin-top: 1.2em;
     margin-bottom: 1em;
+    padding: 1em;
+    position: sticky;
 
 }
 
 h3 {
     font-family: var(--body-font-1);
     font-weight: 700;
-    font-size: calc(1.8* var(--typography-base));
-
+    font-size: calc(1.6* var(--typography-base));
+    margin-top: 2em;
 }
 
 .heading-identity {
@@ -92,7 +94,7 @@ h3 {
     font-family: var(--body-font-5);
     font-size: calc(1.5* var(--typography-base));
     margin-top: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     text-align: center;
 }
 
@@ -118,14 +120,15 @@ p {
 /* ******************************************************************* */
   /* MAIN, ASIDE, ARTICLE - ARTICLE 2 & 3 */
 
-/* .contents-items {
+.contents-items {
     font-family: var(--body-font-1);
-    font-size: calc(1.3* var(--typography-base));
+    font-size: calc(1* var(--typography-base));
     font-weight: 500;
-} */
+}
 
 aside {
     display: none;
+    position: static;
 }
 
 .sticky {
@@ -133,6 +136,7 @@ aside {
 }
 article {
     width: 100%;
+    position: relative;
 }
 
 /* ******************************************************************* */
@@ -261,6 +265,12 @@ footer {
 
     h2{
         font-size: calc(2.6* var(--typography-base)); 
+        position: static;
+    }
+
+    h3 {
+        font-size: calc(2* var(--typography-base)); 
+        position: static;
     }
     
     /* AUTHOR NAME */
@@ -271,7 +281,7 @@ footer {
     
     /* P */
     p {
-        width: 60%;
+        width: 55%;
         font-size: calc(1.5*var(--typography-base));
         line-height: calc(2.2* var(--typography-base));
         margin-top: 1em;
@@ -314,6 +324,16 @@ aside {
     display: flex;
     flex-direction: row;
     gap: char(3*var(--spacing));
+}
+
+.sticky {
+    display: inline;
+}
+
+.contents-items {
+    font-family: var(--body-font-1);
+    font-size: calc(1.6* var(--typography-base));
+    font-weight: 500;
 }
 
 article {
