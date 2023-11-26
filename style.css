@@ -149,8 +149,7 @@ nav {
     position: fixed;
     right: 30px;
     z-index: 99;
-    bottom:5em;
-    /* height: 64px; */
+    bottom:7em;
     background-color: var(--white);
     border-style: solid;
     border-radius: 0.8em;
@@ -229,20 +228,20 @@ button:hover {
 /* ******************************************************************* */
 /* FOOTER */
 footer { 
+    font-family: var(--body-font-1);
+    font-weight: 600;
+    margin-top: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     background-color: var(--darkgrey);
-    font-family: inclusive sans;
-    font-weight: 700;
-    margin-top: 10ch;
-    padding-top: 5ch;
-    padding-bottom: 5ch;
 }
 
 .footer-text {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    /* margin-left: 10%; */
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    margin: auto;
     text-align: left;
     color: var(--white);
 }
