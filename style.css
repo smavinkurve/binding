@@ -42,6 +42,13 @@
     --darkgrey: #0B0B0B;
 }
 
+h1, h2, h3, p {
+    margin-left: auto;
+    margin-right: auto;
+}
+h2, h3, p {
+    text-align: left;
+}
 
 /* ******************************************************************* */
 /* H1 */
@@ -49,9 +56,23 @@ h1{
     font-family: var(--heading-font-1);
     font-size: calc(3.6* var(--typography-base));
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 1em;
+}
+
+h2 {
+    font-family: var(--body-font-1);
+    font-weight: 700;
+    font-size: calc(2* var(--typography-base));
     margin-top: 2em;
+    margin-bottom: 1em;
+
+}
+
+h3 {
+    font-family: var(--body-font-1);
+    font-weight: 700;
+    font-size: calc(1.8* var(--typography-base));
+
 }
 
 .heading-identity {
@@ -66,7 +87,7 @@ h1{
     font-family: var(--body-font-5);
     font-size: calc(1.5* var(--typography-base));
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -78,8 +99,6 @@ p {
     font-size: var(--typography-base);
     line-height: calc(1.7* var(--typography-base));
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 2em;
     /* margin-bottom: 1em; */
     width: 80%;
@@ -92,12 +111,43 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
+    margin-bottom: 2em;
     /* margin-bottom: 1em; */
 }
 
-/* SUB HEADING */
+/* ******************************************************************* */
+  /* MAIN, ASIDE, ARTICLE - ARTICLE 2 & 3 */
+  main {
+    display: flex;
+    flex-direction: column;
+}
 
-/* HOME PAGE TEXT NAMES */
+.sticky {
+    align-items: left;
+    margin-top: 3em;
+}
+
+.contents-items {
+    font-family: var(--body-font-1);
+    font-size: calc(1.6* var(--typography-base));
+    font-weight: 500;
+}
+
+aside {
+    display: block;
+}
+
+article {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-feeling-1, .section-feeling-2, .section-feeling-3, .section-feeling-4 {
+    align-items: left;
+}
+/* ******************************************************************* */
+/* HOME PAGE */
 .text-name {
     margin-left: auto;
     margin-right: auto;
@@ -110,7 +160,7 @@ nav {
 }
 
 .navbar {
-    max-width: 100%;
+    width: 100%;
     position: sticky;
     top: 0;
     display: flex;
@@ -118,7 +168,7 @@ nav {
     background-color: var(--white);
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 1.5em;
     border-style: solid;
     stroke-width: 2px;
 }
@@ -151,7 +201,7 @@ nav {
     position: fixed;
     right: 2em;
     z-index: 99;
-    bottom:7em;
+    bottom:5em;
     background-color: var(--white);
     border-style: solid;
     border-radius: 0.8em;
@@ -166,21 +216,6 @@ button:hover {
     color: var(--white);
 }
 
-
-/* ******************************************************************* */
-/* SECTIONS ARTICLE 1 */
-.section-feeling-1, .section-feeling-2, .section-feeling-3, .section-feeling-4, .section-feeling-5, .section-feeling-6{
-    background-color: var(--white);
-    border-radius: 70px;
-    /* border-style: solid; */
-    /* border-color: var(--darkgrey); */
-    /* stroke-width: 10px; */
-    padding-top: 70px;
-    padding-bottom: 50px;
-    /* margin-top: 10ch; */
-}
-
-  
 
 /* ******************************************************************* */
 /* SECTIONS ARTICLE 3 */
@@ -204,7 +239,7 @@ button:hover {
 footer { 
     font-family: var(--body-font-1);
     font-weight: 600;
-    margin-top: 3em;
+    margin-top: 7em;
     padding-top: 3em;
     padding-bottom: 3em;
     background-color: var(--darkgrey);
@@ -213,12 +248,12 @@ footer {
 .footer-text {
     display: flex;
     justify-content: space-evenly;
-    /* margin-top: 50px;
-    margin-bottom: 50px; */
     margin: auto;
     text-align: left;
     color: var(--white);
 }
+
+
 
 /* ******************************************************************* */
 /* MEDIA QUERIES - LARGE SCREENS */
@@ -226,53 +261,71 @@ footer {
     h1{
         width: 70%;
         font-size: calc(8* var(--typography-base));
-        margin-top: 2.2em;
+        margin-top: 1em;
     }
     
     .heading-identity {
         width: 75%;
         font-size: calc(6* var(--typography-base));
+        margin-top: 1em;
+    }
+
+    h2{
+        font-size: calc(2.6* var(--typography-base)); 
     }
     
     /* AUTHOR NAME */
     .author {
         font-family: var(--body-font-5);
-        font-size: calc(1.5* var(--typography-base));
-        margin-top: 1em;
-        margin-bottom: 1em;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: calc(2.4* var(--typography-base));
     }
     
     /* P */
     p {
-        font-family: var(--body-font-1);
-        font-size: var(--typography-base);
-        line-height: calc(1.7* var(--typography-base));
-        text-align: left;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
-        /* margin-bottom: 1em; */
-        width: 80%;
+        width: 60%;
+        font-size: calc(1.5*var(--typography-base));
+        line-height: calc(2.2* var(--typography-base));
+        margin-top: 1em;
     }
     
     /* PULL QUOTES */
     .pull-quote {
         font-family: var(--body-font-4);
-        font-size: calc(1.2* var(--typography-base));
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
-        /* margin-bottom: 1em; */
+        font-size: calc(2* var(--typography-base));
+        line-height: calc(2.9* var(--typography-base));
     }
 
     .buttons-mobile {
         gap: calc(2* var(--spacing));
     }
 
+    .navbar-button {
+        font-family: var(--body-font-1);
+        font-size: calc(1.4* var(--typography-base));
+    }
+
     .randomize {
         visibility: visible;
     }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: char(2*var(--spacing));
+}
+
+aside {
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+    width: 30%;
+    margin-left: 3em;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    width: 70%;
 }
