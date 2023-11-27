@@ -36,10 +36,22 @@
     --typography-base: 16px;
     --spacing: 10px;
 
-
     --black: black;
     --white: white; 
     --darkgrey: #0B0B0B;
+
+    --light-pink: rgb(255, 191, 210);
+    --light-purple: rgb(207, 189, 247);
+    --light-blue: rgb(161, 222, 255);
+    --mint-green:  rgb(178, 255, 218);
+    --light-yellow: rgb(255, 254, 180);
+}
+
+.background-brand-color {
+    /* background-image: linear-gradient(var(--light-pink), var(--light-purple)); */
+    /* background-image: linear-gradient( var(--light-purple),var(--light-blue)); */
+    background-image: linear-gradient(var(--light-blue), var(--mint-green));
+    /* background-image: linear-gradient(var(--mint-green), var(--light-yellow)); */
 }
 
 h1, h2, h3, p {
@@ -55,6 +67,9 @@ h2, h3, p {
     margin-right: auto;
 }
 
+h1, .author {
+    text-align: center;
+}
 .publication {
     color: var(--white);
     background-color: var(--darkgrey);
@@ -69,19 +84,17 @@ html {
 h1{
     font-family: var(--heading-font-1);
     font-size: calc(3.6* var(--typography-base));
-    text-align: center;
     margin-top: 1em;
 }
 
 h2 {
     font-family: var(--body-font-1);
-    font-weight: 700;
     font-size: calc(2* var(--typography-base));
+    font-weight: 700;
+
     margin-top: 1.2em;
     margin-bottom: 1em;
     padding: 1em;
-
-
 }
 
 article > h2 {
@@ -92,8 +105,8 @@ article > h2 {
 
 h3 {
     font-family: var(--body-font-1);
-    font-weight: 700;
     font-size: calc(1.6* var(--typography-base));
+    font-weight: 700;
     margin-top: 2em;
 }
 
@@ -110,7 +123,6 @@ h3 {
     font-size: calc(1.5* var(--typography-base));
     margin-top: 2em;
     margin-bottom: 3em;
-    text-align: center;
 }
 
 /* P */
@@ -118,10 +130,10 @@ p {
     font-family: var(--body-font-1);
     font-size: var(--typography-base);
     line-height: calc(1.7* var(--typography-base));
-    text-align: left;
+
     margin-top: 2em;
-    /* margin-bottom: 1em; */
-    width: 85%;
+    margin-bottom: 1em;
+    width: 80%;
 }
 
 /* PULL QUOTES */
@@ -169,14 +181,9 @@ article {
 
 /* ******************************************************************* */
 /* NAVBAR */
-nav {
-    position: relative;
-}
 
 .navbar {
     width: 100%;
-    position: sticky;
-    top: 0;
     display: flex;
     flex-direction: row;
     background-color: var(--white);
