@@ -55,6 +55,11 @@ h2, h3, p {
     margin-right: auto;
 }
 
+.publication {
+    color: var(--white);
+    background-color: var(--darkgrey);
+}
+
 /* ******************************************************************* */
 /* HEADINGS */
 h1{
@@ -71,8 +76,14 @@ h2 {
     margin-top: 1.2em;
     margin-bottom: 1em;
     padding: 1em;
-    position: sticky;
 
+
+}
+
+article > h2 {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
 }
 
 h3 {
@@ -124,6 +135,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .contents-items {
     font-family: var(--body-font-1);
     font-size: calc(1* var(--typography-base));
@@ -138,6 +150,7 @@ aside {
 .sticky {
     display: none;
 }
+
 article {
     width: 100%;
     position: relative;
@@ -231,6 +244,40 @@ button:hover {
     padding-top: 3em;
     padding-bottom: 3em;
 }
+
+.style-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 3em;
+    border-style: solid;
+    stroke-width: 2px;
+    color: var(--darkgrey);
+}
+
+.quote-section {
+    width: 40%;
+    background-color: var(--darkgrey);
+    padding-top: 3em;
+    border-radius: 3em;
+}
+
+.text-section {
+    width: 60%;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.pull-quote-2 {
+    font-size: calc(2.4*var(--typography-base));
+    line-height: calc(3* var(--typography-base));
+    color: var(--white);
+    padding-bottom: 4em;
+    position: sticky;
+    top: 3em;
+}
+
 
 
 /* ******************************************************************* */
@@ -349,6 +396,7 @@ article {
 /* ARTICLE 3 SPECIFIC TAGS */
 .style-1 {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     position: relative;
     border-radius: 3em;
@@ -358,27 +406,23 @@ article {
 }
 
 .quote-section {
-    width: 40%;
+    width: 100%;
     background-color: var(--darkgrey);
     padding-top: 3em;
     border-radius: 3em;
 }
 
 .text-section {
-    width: 60%;
+    width: 100%;
     padding-top: 3em;
     padding-bottom: 4em;
 }
 
 .pull-quote-2 {
-    font-size: calc(2.4*var(--typography-base));
-    line-height: calc(3* var(--typography-base));
+    font-size: calc(2*var(--typography-base));
+    line-height: calc(2.8* var(--typography-base));
     color: var(--white);
     padding-bottom: 4em;
     position: sticky;
     top: 3em;
-}
-
-.visual-break {
-    /* display: none; */
 }
