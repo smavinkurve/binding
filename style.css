@@ -217,17 +217,19 @@ button:hover {
 /* ******************************************************************* */
 /* SECTIONS ARTICLE 3 */
 .visual-break {
-    background-color: var(--darkgrey);
-    color: var(--white);
-    margin-bottom: 5ch;
-    margin-top: 5ch;
+    background-color: var(--white);
+    color: var(--darkgrey);
+    border-radius: 3em;
+    border-style: solid;
+    stroke-width: 2px;
 }
 
 .ad-text {
     font-family: dm mono;
     text-align: center;
-    padding-top: 5ch;
-    padding-bottom: 5ch;
+    color: var(--darkgrey);
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 
@@ -342,4 +344,41 @@ aside {
 
 article {
     width: 70%;
+}
+
+/* ARTICLE 3 SPECIFIC TAGS */
+.style-1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 3em;
+    border-style: solid;
+    stroke-width: 2px;
+    color: var(--darkgrey);
+}
+
+.quote-section {
+    width: 40%;
+    background-color: var(--darkgrey);
+    padding-top: 3em;
+    border-radius: 3em;
+}
+
+.text-section {
+    width: 60%;
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+
+.pull-quote-2 {
+    font-size: calc(2.4*var(--typography-base));
+    line-height: calc(3* var(--typography-base));
+    color: var(--white);
+    padding-bottom: 4em;
+    position: sticky;
+    top: 3em;
+}
+
+.visual-break {
+    /* display: none; */
 }
