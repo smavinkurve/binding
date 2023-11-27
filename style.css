@@ -21,17 +21,13 @@
 
 
 :root {
-    --heading-font-1: 'Bungee Shade', sans-serif;
-    --heading-font-2: 'Silkscreen', sans-serif;
-    --heading-font-3: 'Koulen', sans-serif;
-    --heading-font-4: 'Epilogue', sans-serif;
-    --heading-font-5: 'DM Serif Display', serif;
+    --heading-font: 'Bungee Shade', sans-serif;
 
-    --body-font-1: 'DM Sans', sans-serif;
-    --body-font-2: 'Epilogue', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+    /* --body-font-2: 'Epilogue', sans-serif;
     --body-font-3: 'Cardo', serif;
     --body-font-4: 'DM Mono', monospace;
-    --body-font-5: 'Inclusive Sans', sans-serif;
+    --body-font-5: 'Inclusive Sans', sans-serif; */
 
     --typography-base: 16px;
     --spacing: 10px;
@@ -45,13 +41,40 @@
     --light-blue: rgb(161, 222, 255);
     --mint-green:  rgb(178, 255, 218);
     --light-yellow: rgb(255, 254, 180);
+
+    --background-gradient: linear-gradient(var(--light-pink), var(--light-purple));
+    /* --background-gradient-2: linear-gradient( var(--light-purple),var(--light-blue));
+    --background-gradient-3: linear-gradient(var(--light-blue), var(--mint-green));
+    --background-gradient-4: linear-gradient(var(--mint-green), var(--light-yellow)); */
+
 }
 
-.background-brand-color {
-    /* background-image: linear-gradient(var(--light-pink), var(--light-purple)); */
-    /* background-image: linear-gradient( var(--light-purple),var(--light-blue)); */
-    background-image: linear-gradient(var(--light-blue), var(--mint-green));
-    /* background-image: linear-gradient(var(--mint-green), var(--light-yellow)); */
+/* CLASSES FOR RANDOM HEADLINES */
+.heading-font-1 {
+    --heading-font: 'Bungee Shade', sans-serif;
+}
+
+.heading-font-2 {
+    --heading-font: 'Silkscreen', sans-serif;
+}
+
+.heading-font-3 {
+    --heading-font: 'Epilogue', sans-serif;
+}
+
+.heading-font-4 {
+    --heading-font: 'DM Serif Display', serif;
+}
+
+/* CLASSES FOR RANDOM BODY FONTS */
+
+/* OVERRIDE */
+#page-solid {
+    --body-font: "DM Sans";
+}
+
+.background-gradient {
+    background-image: var(--background-gradient);
 }
 
 h1, h2, h3, p {
@@ -82,13 +105,13 @@ html {
 /* ******************************************************************* */
 /* HEADINGS */
 h1{
-    font-family: var(--heading-font-1);
+    font-family: var(--heading-font);
     font-size: calc(3.6* var(--typography-base));
     margin-top: 1em;
 }
 
 h2 {
-    font-family: var(--body-font-1);
+    font-family: var(--body-font);
     font-size: calc(2* var(--typography-base));
     font-weight: 700;
 
@@ -104,22 +127,22 @@ article > h2 {
 }
 
 h3 {
-    font-family: var(--body-font-1);
+    font-family: var(--body-font);
     font-size: calc(1.6* var(--typography-base));
     font-weight: 700;
     margin-top: 2em;
 }
 
 .heading-identity {
-    font-family: var(--heading-font-1);
+    font-family: var(--heading-font);
     font-size: calc(2.6* var(--typography-base));
     -webkit-hyphens: auto;
     hyphens: auto;
 }
 
-/* AUTHOR NAME */
+/* AUTHOR NAME -- don't assign variable */
 .author {
-    font-family: var(--body-font-5);
+    font-family: "Inclusive Sans"; 
     font-size: calc(1.5* var(--typography-base));
     margin-top: 2em;
     margin-bottom: 3em;
@@ -127,7 +150,7 @@ h3 {
 
 /* P */
 p {
-    font-family: var(--body-font-1);
+    font-family: var(--body-font);
     font-size: var(--typography-base);
     line-height: calc(1.7* var(--typography-base));
 
@@ -136,9 +159,9 @@ p {
     width: 80%;
 }
 
-/* PULL QUOTES */
+/* PULL QUOTES - don't assign variable */
 .pull-quote {
-    font-family: var(--body-font-4);
+    font-family: "DM Mono";
     font-size: calc(1.2* var(--typography-base));
     margin-top: 2em;
     margin-bottom: 2em;
@@ -153,7 +176,7 @@ main {
 }
 
 .contents-items {
-    font-family: var(--body-font-1);
+    font-family: var(--body-font);
     font-size: calc(1* var(--typography-base));
     font-weight: 500;
 }
@@ -203,7 +226,7 @@ article {
 }
 
 .navbar-button {
-    font-family: var(--body-font-1);
+    font-family: var(--body-font);
     font-size: calc(1.1* var(--typography-base));
     font-weight: 500;
     border-style: solid;
@@ -228,7 +251,7 @@ article {
     border-radius: 0.8em;
     stroke-width: 2px;
     padding: 0.7em 2em 0.7em 2em;
-    font-family: var(--body-font-1);
+    font-family: var(--body-font);
     font-size: calc(1.1* var(--typography-base));
 }
 
@@ -239,7 +262,7 @@ button:hover {
 
 
 /* ******************************************************************* */
-/* SECTIONS ARTICLE 3 */
+/* SECTIONS ARTICLE 3 -- don't assign variable*/
 .visual-break {
     background-color: var(--white);
     color: var(--darkgrey);
@@ -250,7 +273,7 @@ button:hover {
 }
 
 .ad-text {
-    font-family: var(--body-font-4);
+    font-family: "DM Mono";
     text-align: center;
     color: var(--darkgrey);
     padding-top: 3em;
@@ -295,7 +318,7 @@ button:hover {
 /* ******************************************************************* */
 /* FOOTER */
 footer { 
-    font-family: var(--body-font-1);
+    font-family: var(--body-font);
     font-weight: 600;
     margin-top: 7em;
     padding-top: 3em;
@@ -340,7 +363,6 @@ footer {
     
     /* AUTHOR NAME */
     .author {
-        font-family: var(--body-font-5);
         font-size: calc(2.4* var(--typography-base));
     }
     
@@ -354,7 +376,6 @@ footer {
     
     /* PULL QUOTES */
     .pull-quote {
-        font-family: var(--body-font-4);
         font-size: calc(2* var(--typography-base));
         line-height: calc(2.9* var(--typography-base));
     }
@@ -364,14 +385,13 @@ footer {
     }
 
     .navbar-button {
-        font-family: var(--body-font-1);
+        font-family: var(--body-font);
         font-size: calc(1.4* var(--typography-base));
     }
 
     .randomize {
         display: inline;
     }
-}
 
 main {
     display: flex;
@@ -396,7 +416,7 @@ aside {
 }
 
 .contents-items {
-    font-family: var(--body-font-1);
+    font-family: var(--body-font);
     font-size: calc(1.6* var(--typography-base));
     font-weight: 500;
 }
@@ -449,4 +469,5 @@ article {
     border-style: solid;
     stroke-width: 2px;
     color: var(--darkgrey);
+}
 }
