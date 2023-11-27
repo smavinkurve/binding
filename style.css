@@ -60,6 +60,10 @@ h2, h3, p {
     background-color: var(--darkgrey);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ******************************************************************* */
 /* HEADINGS */
 h1{
@@ -104,8 +108,8 @@ h3 {
 .author {
     font-family: var(--body-font-5);
     font-size: calc(1.5* var(--typography-base));
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 3em;
     text-align: center;
 }
 
@@ -337,7 +341,7 @@ footer {
         width: 55%;
         font-size: calc(1.5*var(--typography-base));
         line-height: calc(2.2* var(--typography-base));
-        margin-top: 1em;
+        margin-top: 2em;
     }
     
     /* PULL QUOTES */
@@ -406,14 +410,14 @@ article {
 }
 
 .quote-section {
-    width: 100%;
+    width: 40%;
     background-color: var(--darkgrey);
     padding-top: 3em;
     border-radius: 3em;
 }
 
 .text-section {
-    width: 100%;
+    width: 60%;
     padding-top: 3em;
     padding-bottom: 4em;
 }
@@ -422,7 +426,19 @@ article {
     font-size: calc(2*var(--typography-base));
     line-height: calc(2.8* var(--typography-base));
     color: var(--white);
+    background-color: var(--darkgrey);
     padding-bottom: 4em;
     position: sticky;
     top: 3em;
+}
+
+.style-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    border-radius: 3em;
+    border-style: solid;
+    stroke-width: 2px;
+    color: var(--darkgrey);
 }
