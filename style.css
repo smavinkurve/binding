@@ -243,20 +243,21 @@ button:hover {
 .visual-break {
     background-color: var(--white);
     color: var(--darkgrey);
+
     border-radius: 3em;
     border-style: solid;
     stroke-width: 2px;
 }
 
 .ad-text {
-    font-family: dm mono;
+    font-family: var(--body-font-4);
     text-align: center;
     color: var(--darkgrey);
     padding-top: 3em;
     padding-bottom: 3em;
 }
 
-.style-1 {
+/* .style-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,7 +288,7 @@ button:hover {
     padding-bottom: 4em;
     position: sticky;
     top: 3em;
-}
+} */
 
 
 
