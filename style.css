@@ -203,6 +203,12 @@ h3 {
     hyphens: auto;
 }
 
+.heading-introduction {
+    font-family: var(--heading-font);
+    font-size: calc(3* var(--typography-base));
+    width: 85%;
+}
+
 /* AUTHOR NAME -- don't assign variable */
 .author {
     font-family: "Inclusive Sans"; 
@@ -264,25 +270,21 @@ article {
 
 .text-name-1, .text-name-2, .text-name-3 {
     font-family: "DM Sans";
-    font-size: calc(2.4* var(--typography-base));
-    line-height: calc(3.4* var(--typography-base));
-    margin-left: auto;
-    margin-right: auto;
+    font-size: calc(2* var(--typography-base));
+    line-height: calc(3* var(--typography-base));
     background-color: var(--darkgrey);
     color: var(--white);
+    padding: 1em;
 }
 ul {
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: (1fr, 33%);
-    margin-left: 5em;
-    margin-right: 5em;
+    gap: 1em;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
     margin-top: 7em;
     margin-bottom: 5em;
-}
-
-li {
-    padding: 1em;
 }
 
 
@@ -444,6 +446,7 @@ button:hover {
     .heading-introduction {
         font-size: calc(7.1* var(--typography-base));
         line-height: calc(7.7* var(--typography-base));
+        width: 65%;
     }
 
     h2{
@@ -512,21 +515,19 @@ button:hover {
     /* HOMEPAGE */
 
     .text-name-1, .text-name-2, .text-name-3 {
-        font-family: "DM Sans";
         font-size: calc(2.4* var(--typography-base));
         line-height: calc(3.4* var(--typography-base));
         margin-left: auto;
         margin-right: auto;
-        background-color: var(--darkgrey);
-        color: var(--white);
     }
+
     ul {
         display: grid;
         /* grid-template-columns: repeat(3, 1fr); */
         grid-template-columns: (1fr, 33%);
         margin-left: 5em;
         margin-right: 5em;
-        margin-top: 10em;
+        margin-top: 7em;
         margin-bottom: 5em;
     }
     
