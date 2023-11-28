@@ -41,7 +41,7 @@
     --light-blue: rgb(161, 222, 255);
     --mint-green:  rgb(178, 255, 218);
     --light-yellow: rgb(255, 254, 180);
-    --cream: rgb(255, 253, 240);
+    --cream: rgb(235, 226, 206);
 
    
     /* --background-gradient-1: linear-gradient(var(--light-pink), var(--light-purple)); */
@@ -94,7 +94,7 @@
 
 /* CLASSES FOR RANDOM BACKGROUND COLORS */
 .background-gradient-1 {
-    --background-gradient: linear-gradient(var(--white), var(--cream));
+    --background-gradient: linear-gradient(var(--cream), var(--white));
 }
 
 .background-gradient-2 {
@@ -114,17 +114,22 @@
 }
 
 
+body {
+    background-image: var(--background-gradient);
+}
 
 
 /* OVERRIDE */
 #page-solid {
     --body-font: "DM Sans";
-    /* --background-gradient: var(--light-blue); */
+    --background-gradient: var(--white);
 }
 
-/* #page-feeling {
+#page-feeling {
     --background-gradient: var(--white);
-} */
+}
+
+/* #page-home {} */
 
 #top {
     --body-font: "DM Sans";
@@ -132,7 +137,7 @@
 
 
 /* ******************************************************************* */
-/* COMMON VALUES/ NOT REALTED TO THE RANDOMIZE FEATURE */
+/* COMMON VALUES/ NOT RELATED TO THE RANDOMIZE FEATURE */
 h1, h2, h3, p {
     margin-left: auto;
     margin-right: auto;
@@ -207,7 +212,7 @@ h3 {
 /* P */
 p {
     font-family: var(--body-font);
-    font-size: calc(1.2*var(--typography-base));
+    font-size: calc(1.3*var(--typography-base));
     line-height: calc(2* var(--typography-base));
 
     margin-top: 2em;
