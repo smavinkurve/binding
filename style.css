@@ -342,7 +342,8 @@ button:hover {
     padding-bottom: 3em;
 }
 
-/* .style-1 {
+/* TESTING */
+.style-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -354,26 +355,24 @@ button:hover {
 }
 
 .quote-section {
-    width: 40%;
     background-color: var(--darkgrey);
     padding-top: 3em;
     border-radius: 3em;
 }
 
 .text-section {
-    width: 60%;
     padding-top: 3em;
     padding-bottom: 4em;
 }
 
 .pull-quote-2 {
-    font-size: calc(2.4*var(--typography-base));
+    font-size: calc(2.2*var(--typography-base));
     line-height: calc(3* var(--typography-base));
     color: var(--white);
     padding-bottom: 4em;
     position: sticky;
     top: 3em;
-} */
+}
 
 
 
@@ -402,7 +401,7 @@ footer {
 /* MEDIA QUERIES - LARGER SCREENS */
 @media (min-width: 775px) {
     h1{
-        width: 70%;
+        width: 65%;
         font-size: calc(8* var(--typography-base));
         margin-top: 1em;
     }
@@ -411,6 +410,11 @@ footer {
         width: 75%;
         font-size: calc(6* var(--typography-base));
         margin-top: 1em;
+    }
+
+    .heading-introduction {
+        font-size: calc(7.1* var(--typography-base));
+        line-height: calc(7.7* var(--typography-base));
     }
 
     h2{
@@ -430,7 +434,7 @@ footer {
     
     /* P */
     p {
-        width: 55%;
+        width: 50%;
         font-size: calc(1.5*var(--typography-base));
         line-height: calc(2.2* var(--typography-base));
         margin-top: 2em;
@@ -468,6 +472,7 @@ aside {
     width: 30%;
     margin-left: 5em;
     margin-top: 3em;
+
     display: flex;
     flex-direction: row;
     gap: char(4*var(--spacing));
