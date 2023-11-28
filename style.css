@@ -343,14 +343,14 @@ button:hover {
 }
 
 /* TESTING */
-.style-1 {
+/* .style-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     border-radius: 3em;
     border-style: solid;
-    stroke-width: 2px;
+    stroke-width: 1px;
     color: var(--darkgrey);
 }
 
@@ -366,13 +366,14 @@ button:hover {
 }
 
 .pull-quote-2 {
-    font-size: calc(2.2*var(--typography-base));
-    line-height: calc(3* var(--typography-base));
+    font-size: calc(1.5*var(--typography-base));
+    line-height: calc(2* var(--typography-base));
+    background-color: var(--darkgrey);
     color: var(--white);
     padding-bottom: 4em;
     position: sticky;
     top: 3em;
-}
+} */
 
 
 
