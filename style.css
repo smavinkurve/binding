@@ -17,6 +17,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* ******* */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+/* ******* */
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap');
 /* ******************************************************************* */
 
 
@@ -24,10 +26,8 @@
     --heading-font: 'Bungee Shade', sans-serif;
 
     --body-font: 'DM Sans', sans-serif;
-    /* --body-font-2: 'Epilogue', sans-serif;
-    --body-font-3: 'Cardo', serif;
-    --body-font-4: 'DM Mono', monospace;
-    --body-font-5: 'Inclusive Sans', sans-serif; */
+
+    --background-gradient: linear-gradient(var(--white), var(--cream));
 
     --typography-base: 16px;
     --spacing: 10px;
@@ -41,14 +41,17 @@
     --light-blue: rgb(161, 222, 255);
     --mint-green:  rgb(178, 255, 218);
     --light-yellow: rgb(255, 254, 180);
+    --cream: rgb(255, 253, 240);
 
-    --background-gradient: linear-gradient(var(--light-pink), var(--light-purple));
+   
+    /* --background-gradient-1: linear-gradient(var(--light-pink), var(--light-purple)); */
     /* --background-gradient-2: linear-gradient( var(--light-purple),var(--light-blue));
     --background-gradient-3: linear-gradient(var(--light-blue), var(--mint-green));
     --background-gradient-4: linear-gradient(var(--mint-green), var(--light-yellow)); */
 
 }
 
+/* ******************************************************************* */
 /* CLASSES FOR RANDOM HEADLINES */
 .heading-font-1 {
     --heading-font: 'Bungee Shade', sans-serif;
@@ -66,17 +69,69 @@
     --heading-font: 'DM Serif Display', serif;
 }
 
+.heading-font-5 {
+    --heading-font: 'Tourney', sans-serif;
+}
+
+
 /* CLASSES FOR RANDOM BODY FONTS */
+.body-font-1 {
+    --body-font: 'DM Sans', sans-serif;
+}
+
+.body-font-2 {
+    --body-font: 'Cardo', serif;
+}
+
+.body-font-3 {
+    --body-font: 'DM Mono', monospace;
+}
+
+.body-font-4 {
+    --body-font: 'Hanken Grotesk', sans-serif;
+}
+
+/* CLASSES FOR RANDOM BACKGROUND COLORS */
+.background-gradient-1 {
+    --background-gradient: linear-gradient(var(--white), var(--cream));
+}
+
+.background-gradient-2 {
+    --background-gradient: linear-gradient(var(--light-pink), var(--light-purple));
+}
+
+.background-gradient-3 {
+    --background-gradient: linear-gradient( var(--light-purple),var(--light-blue));
+}
+
+.background-gradient-4 {
+    --background-gradient: linear-gradient(var(--light-blue), var(--mint-green));
+}
+
+.background-gradient-5 {
+    --background-gradient: linear-gradient(var(--mint-green), var(--light-yellow));
+}
+
+
+
 
 /* OVERRIDE */
 #page-solid {
     --body-font: "DM Sans";
+    /* --background-gradient: var(--light-blue); */
 }
 
-.background-gradient {
-    background-image: var(--background-gradient);
+/* #page-feeling {
+    --background-gradient: var(--white);
+} */
+
+#top {
+    --body-font: "DM Sans";
 }
 
+
+/* ******************************************************************* */
+/* COMMON VALUES/ NOT REALTED TO THE RANDOMIZE FEATURE */
 h1, h2, h3, p {
     margin-left: auto;
     margin-right: auto;
@@ -127,7 +182,7 @@ article > h2 {
 }
 
 h3 {
-    font-family: var(--body-font);
+    font-family: "DM Sans";
     font-size: calc(1.6* var(--typography-base));
     font-weight: 700;
     margin-top: 2em;
@@ -176,19 +231,19 @@ main {
 }
 
 .contents-items {
-    font-family: var(--body-font);
+    font-family: "DM Sans";
     font-size: calc(1* var(--typography-base));
     font-weight: 500;
 }
 
 aside {
     display: none;
-    position: static;
+    position: sticky;
 }
 
-.sticky {
+/* .sticky {
     display: none;
-}
+} */
 
 article {
     width: 100%;
@@ -226,7 +281,7 @@ article {
 }
 
 .navbar-button {
-    font-family: var(--body-font);
+    font-family: "DM Sans";;
     font-size: calc(1.1* var(--typography-base));
     font-weight: 500;
     border-style: solid;
@@ -408,7 +463,7 @@ aside {
     margin-top: 3em;
     display: flex;
     flex-direction: row;
-    gap: char(3*var(--spacing));
+    gap: char(4*var(--spacing));
 }
 
 .sticky {
@@ -416,7 +471,7 @@ aside {
 }
 
 .contents-items {
-    font-family: var(--body-font);
+    font-family: "DM Sans";
     font-size: calc(1.6* var(--typography-base));
     font-weight: 500;
 }
