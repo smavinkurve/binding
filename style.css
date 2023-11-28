@@ -256,9 +256,6 @@ aside {
     position: sticky;
 }
 
-/* .sticky {
-    display: none;
-} */
 
 article {
     width: 100%;
@@ -278,7 +275,6 @@ article {
 }
 ul {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: (1fr, 33%);
     gap: 1em;
     margin-left: 1.2em;
@@ -301,7 +297,7 @@ ul {
     margin-right: auto;
     padding: 1.5em;
     border-style: solid;
-    stroke-width: 1.5px;
+    stroke-width: 2px;
 }
 
 .buttons-mobile {
@@ -318,7 +314,7 @@ ul {
     font-weight: 500;
     border-style: solid;
     border-radius: 0.8em;
-    stroke-width: 1.5px;
+    stroke-width: 2px;
     padding: 0.5em;
 }
 
@@ -356,7 +352,7 @@ button:hover {
 
     border-radius: 3em;
     border-style: solid;
-    stroke-width: 1.5px;
+    stroke-width: 2px;
 }
 
 .ad-text {
@@ -413,7 +409,7 @@ button:hover {
         background-color: var(--white);
 
         border-style: solid;
-        stroke-width: 1.5px;
+        stroke-width: 2px;
     }
 
     .footer-text {
