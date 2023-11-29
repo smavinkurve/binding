@@ -35,6 +35,7 @@
     --black: black;
     --white: white; 
     --darkgrey: #0B0B0B;
+    --light-grey: #dedede;
 
     --light-pink: rgb(255, 191, 210);
     --light-purple: rgb(207, 189, 247);
@@ -42,6 +43,7 @@
     --mint-green:  rgb(178, 255, 218);
     --light-yellow: rgb(255, 254, 180);
     --cream: rgb(235, 226, 206);
+
 
    
     /* --background-gradient-1: linear-gradient(var(--light-pink), var(--light-purple)); */
@@ -284,7 +286,6 @@ ul {
 }
 
 
-
 /* ******************************************************************* */
 /* NAVBAR */
 
@@ -345,7 +346,7 @@ button:hover {
 
 
 /* ******************************************************************* */
-/* SECTIONS ARTICLE 3 -- don't assign variable*/
+/* SECTIONS ARTICLE 3*/
 .visual-break {
     background-color: var(--white);
     color: var(--darkgrey);
@@ -363,47 +364,32 @@ button:hover {
     padding-bottom: 3em;
 }
 
+
 /* TESTING */
-/* .style-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    border-radius: 3em;
-    border-style: solid;
-    stroke-width: 1px;
-    color: var(--darkgrey);
-}
 
-.quote-section {
-    background-color: var(--darkgrey);
-    padding-top: 3em;
-    border-radius: 3em;
-}
+/* ******************************************************************* */
+/* AUTHOR BIO */
 
-.text-section {
-    padding-top: 3em;
-    padding-bottom: 4em;
-}
-
-.pull-quote-2 {
-    font-size: calc(1.5*var(--typography-base));
-    line-height: calc(2* var(--typography-base));
-    background-color: var(--darkgrey);
-    color: var(--white);
-    padding-bottom: 4em;
-    position: sticky;
-    top: 3em;
+/* .author-bio-heading {
+  background-color: var(--light-grey);
 } */
 
-
+.author-bio {
+    font-family: "DM Sans";
+    margin-top: 4em;
+    margin-bottom: none;
+    padding: 2em;
+    border-style: solid;
+    stroke-width: 2px;
+    background-color: var(--white);
+}
 
 /* ******************************************************************* */
 /* FOOTER */
     footer { 
-        font-family: var(--body-font);
+        font-family: "DM Sans";
         font-weight: 600;
-        margin-top: 7em;
+        /* margin-top: 7em; */
         padding-top: 3em;
         padding-bottom: 3em;
         background-color: var(--white);
@@ -421,6 +407,8 @@ button:hover {
         text-align: left;
         color: var(--darkgrey);
     }
+
+
 
 
 
@@ -545,10 +533,11 @@ button:hover {
         max-height: 100vh;
         width: 30%;
         margin-left: 5em;
-        margin-top: 3em;
+        /* margin-top: 3em; */
 
         display: flex;
         flex-direction: row;
+        justify-content: start;
         gap: char(2*var(--spacing));
     }
 
@@ -611,4 +600,12 @@ button:hover {
         stroke-width: 2px;
         color: var(--darkgrey);
     }
+    /* AUTHOR BIO */
+
+
+.author-bio {
+    margin-top: 5em;
+    margin-bottom: none;
+    padding: 2em;
+}
 }
