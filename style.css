@@ -388,7 +388,7 @@ button:hover {
 /* FOOTER */
     footer { 
         font-family: "DM Sans";
-        font-weight: 600;
+        font-weight: 500;
         /* margin-top: 7em; */
         padding-top: 3em;
         padding-bottom: 3em;
@@ -604,7 +604,7 @@ button:hover {
 
 
 .author-bio {
-    margin-top: 5em;
+    margin-top: 2em;
     margin-bottom: none;
     padding: 2em;
 }
