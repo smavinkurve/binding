@@ -424,7 +424,7 @@ button:hover {
     .heading-introduction {
         font-size: calc(7.1* var(--typography-base));
         line-height: calc(7.7* var(--typography-base));
-        width: 65%;
+        width: 60%;
     }
 
     h2{
