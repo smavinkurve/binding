@@ -365,14 +365,8 @@ button:hover {
 }
 
 
-/* TESTING */
-
 /* ******************************************************************* */
 /* AUTHOR BIO */
-
-/* .author-bio-heading {
-  background-color: var(--light-grey);
-} */
 
 .author-bio {
     font-family: "DM Sans";
@@ -389,7 +383,7 @@ button:hover {
     footer { 
         font-family: "DM Sans";
         font-weight: 500;
-        /* margin-top: 7em; */
+        margin-top: 5em;
         padding-top: 3em;
         padding-bottom: 3em;
         background-color: var(--white);
