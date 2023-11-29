@@ -407,7 +407,7 @@ button:hover {
 
 
 /* ******************************************************************* */
-/* MEDIA QUERIES - LARGER SCREENS */
+/* MEDIA QUERIES - LAPTOPS and LARGER SCREENS */
 @media (min-width: 775px) {
     h1{
         width: 65%;
@@ -441,6 +441,7 @@ button:hover {
     /* AUTHOR NAME */
     .author {
         font-size: calc(2.4* var(--typography-base));
+        width: 100%;
     }
     
     /* P */
@@ -495,7 +496,6 @@ button:hover {
     }
 
     /* HOMEPAGE */
-
     .text-name-1, .text-name-2, .text-name-3 {
         font-size: calc(2.4* var(--typography-base));
         line-height: calc(3.4* var(--typography-base));
@@ -507,7 +507,6 @@ button:hover {
 
     ul {
         display: grid;
-        /* grid-template-columns: repeat(3, 1fr); */
         grid-template-columns: (1fr, 33%);
         margin-left: 5em;
         margin-right: 5em;
@@ -594,12 +593,11 @@ button:hover {
         stroke-width: 2px;
         color: var(--darkgrey);
     }
+   
     /* AUTHOR BIO */
-
-
-.author-bio {
-    margin-top: 2em;
-    margin-bottom: none;
-    padding: 2em;
-}
+    .author-bio {
+        margin-top: 2em;
+        margin-bottom: none;
+        padding: 2em;
+    }
 }
